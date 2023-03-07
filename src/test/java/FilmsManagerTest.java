@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
@@ -130,9 +131,10 @@ public class FilmsManagerTest {
         manager.addFilm("FilmX");
         manager.addFilm("FilmXI");
 
-        String[] expected = {"FilmXI", "FilmIX", "FilmVIII", "FilmVII", "FilmVI", "FilmV", "FilmIV", "FilmIII", "FilmII", "FilmI"};
+        String[] expected = {"FilmXI", "FilmX", "FilmIX", "FilmVIII", "FilmVII", "FilmVI", "FilmV", "FilmIV", "FilmIII", "FilmII"};
 
         String[] actual = manager.findLast();
+
     }
 
     @Test
